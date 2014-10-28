@@ -127,5 +127,68 @@ namespace FiledRecipes.Domain
                 handler(this, e);
             }
         }
+
+        public virtual void Load()
+        {
+            List<IRecipe> recipes = new List<IRecipe>();
+
+            using (StreamReader reader = new StreamReader(@"..\..\App_Data\Recipes.txt"))
+            {
+                string line;
+                RecipeReadStatus status = RecipeReadStatus.Indefinite;
+
+                while ((line = reader.ReadLine()) != null)
+                
+                { 
+                    switch (line)
+                    { 
+                        case SectionRecipe:
+                            status = RecipeReadStatus.New;
+                            break;
+
+                        case SectionIngredients:
+                            status = RecipeReadStatus.Ingredient;
+                            break;
+
+                        case SectionInstructions:
+                            status = RecipeReadStatus.Instruction;
+                            break;
+
+                        default:
+                            switch (status)
+                            {
+                                case RecipeReadStatus.New:
+                                    recipes.Add(new Recipe(line));
+                                    break;
+
+                                case RecipeReadStatus.Ingredient:
+                                    string[] splittedIngredients = line.Split(new char[] {';'});
+                                    if(splittedIngredients.Length % 3 != 0)
+                                    {
+                                        throw new FileFormatException();
+                                    }
+                                    break;
+
+                                case RecipeReadStatus.Instruction:
+                                    recipes.Add(new Recipe(line));
+                                    break;
+
+                                default:
+                                    throw new FileFormatException();
+                            }
+                            break;
+                    }
+                }
+            }
+
+            recipes.Sort();
+            _recipes = recipes;
+            IsModified = false;
+            OnRecipesChanged(EventArgs.Empty);
+        }
+
+        public virtual void Save()
+        { 
+        }
     }
 }
