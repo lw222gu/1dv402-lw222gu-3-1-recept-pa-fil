@@ -132,7 +132,7 @@ namespace FiledRecipes.Domain
         {
             List<IRecipe> recipes = new List<IRecipe>();
 
-            using (StreamReader reader = new StreamReader(@"..\..\App_Data\Recipes.txt"))
+            using (StreamReader reader = new StreamReader(_path))
             {
                 string line;
                 RecipeReadStatus status = RecipeReadStatus.Indefinite;
@@ -167,10 +167,15 @@ namespace FiledRecipes.Domain
                                     {
                                         throw new FileFormatException();
                                     }
+                                    Ingredient oneIngredient = new Ingredient();
+                                    oneIngredient.Amount = splittedIngredients[0];
+                                    oneIngredient.Measure = splittedIngredients[1];
+                                    oneIngredient.Name = splittedIngredients[2];
+                                    recipes.Last().Add(oneIngredient);
                                     break;
 
                                 case RecipeReadStatus.Instruction:
-                                    recipes.Add(new Recipe(line));
+                                    recipes.Last().Add(line);
                                     break;
 
                                 default:

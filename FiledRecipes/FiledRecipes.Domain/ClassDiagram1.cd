@@ -18,12 +18,12 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAQAAAAACABARCAIAAAAAAAIAAAAAAgAAgAEAAAA=</HashCode>
+      <HashCode>AAAAgYAAAAACABARCAIAAAAAAAIAAAAAAgAAAAEAAAA=</HashCode>
       <FileName>RecipeRepository.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="System.Object" Collapsed="true">
+  <Class Name="System.Object">
     <Position X="5.25" Y="1.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
