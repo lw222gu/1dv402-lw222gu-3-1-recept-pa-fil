@@ -15,11 +15,10 @@ namespace FiledRecipes.Views
         public void Show(IRecipe recipe)
         {
 
-            foreach (var header in recipe.Name)
-            {
-                Header = recipe.Name;
-                ShowHeaderPanel();
-            }
+            
+            Header = recipe.Name;
+            ShowHeaderPanel();
+            
 
             Console.WriteLine("\nIngredienser");
 

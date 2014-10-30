@@ -1,4 +1,4 @@
-﻿[Recept]
+[Recept]
 Filmjölkslimpa
 [Ingredienser]
 4,5;dl;filmjölk
@@ -24,20 +24,6 @@ Skär bort kvisten från fikonen och hacka dem och hasselnötterna grovt, blanda
 Lägg ett bakplåtspapper i en avlång brödform så att pappret sticker ut över kanterna.
 Fyll formen med smet, strö över lite grovt rågmjöl och grädda brödet i cirka 45 minuter.
 [Recept]
-Filbunke med färska bär
-[Ingredienser]
-5;dl;gammaldags mjölk
-0,5;dl;grädde
-1;dl;filmjölk
-4;;plastglas
-;;jordgubbar
-;;ingefära eller kanel
-;;socker
-[Instruktioner]
-Blanda mjölk och grädde. Värm, utan att det kokar, till 90°. Om mjölken kokar vasslar den sig. Låt svalna till fingerljummet. Rör i filmjölken och fördela i plastglasen.
-Låt stå under handduk eller smörpapper i 12-24 timmar tills filbunken "stannat".
-Servera med färska bär eller bara ingefära/kanel och lite socker.
-[Recept]
 Ugnskassler med grön potatissallad
 [Ingredienser]
 8;;tunna kasslerkotletter
@@ -57,14 +43,3 @@ Ugnskassler med grön potatissallad
 Koka potatisen med skalet på och låt kallna. Skala den och skär i skivor. Hacka lök, dill och persilja. Strimla purjon fint. Blanda med potatis och tinade ärter i en stor skål.
 Rör ihop majonnäs och filmjölk. Smaksätt med salt, peppar och citronsaft. Vänd ner den i salladen.
 Sätt ugnen på 225°. Lägg kasslern på ett ugnssäkert fat. Blanda den lätt avrunna ananasen med hackad syltad ingefära och lägg på kasslerskivorna. Sätt in kasslern i ugnen och låt den bli genomvarm. Servera med salladen.
-
-
-
-
-
-
-
-
-
-
-
